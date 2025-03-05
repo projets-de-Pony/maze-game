@@ -50,23 +50,6 @@ const AnimatedCell = styled(motion.div)<CellProps>`
   border-left: ${props => (props.walls.left ? '2px solid white' : 'none')};
 `;
 
-const Controls = styled.div`
-  display: flex;
-  gap: 10px;
-  margin-bottom: 20px;
-`;
-
-const Button = styled.button`
-  padding: 8px 16px;
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  &:hover {
-    background-color: #45a049;
-  }
-`;
 
 const Stats = styled.div`
   display: flex;
@@ -208,6 +191,7 @@ const Maze: React.FC = () => {
 
   const initializeGame = useCallback((diff: Difficulty) => {
     const size = difficultySettings[diff].size;
+    setDifficulty(diff);
     const newMaze = generateMaze(size, size);
     
     // Ajouter des bonus et obstacles
@@ -343,7 +327,7 @@ const Maze: React.FC = () => {
         />
       )}
       
-      <h1>Labyrinthe</h1>
+      <h1>Labyrinthe de PONY</h1>
 
       <Notice>
         🎮 Comment jouer :

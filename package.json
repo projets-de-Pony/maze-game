@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "postinstall": "npm install typescript @types/react @types/react-dom --save-dev",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
