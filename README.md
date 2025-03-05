@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -52,3 +53,7 @@ export default tseslint.config({
   },
 })
 ```
+=======
+# maze-game
+C'est un jeu de labyrinthe, avec un système de choix de difficulté, de scrore de bonus et de manus.
+>>>>>>> 19d854679ca2e4eabdc586e17c5b1c8a87e71539
